@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name='People',
+            name='Person',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('first_name', models.CharField(max_length=250)),
@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='document',
-            name='people',
-            field=models.ForeignKey(to='com_ex.People'),
+            name='person',
+            field=models.ForeignKey(to='com_ex.Person'),
         ),
     ]
