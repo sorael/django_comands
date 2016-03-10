@@ -1,0 +1,109 @@
+[
+    {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": "2015-11-30T12:00:00.276Z",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$12000$OwMmZx9T1x5k$0mues1MEHqWj4av0aOgpULUZpoWfywzu3yV20/nJEAM=",
+        "email": "admin@admin.ua",
+        "date_joined": "2014-09-11T11:00:00.276Z"
+        }
+    },
+  {
+    "model": "com_ex.People",
+    "pk": 1,
+    "fields": {
+      "first_name": "Test1",
+      "last_name": "Test1"
+    }
+  },
+  {
+    "model": "com_ex.People",
+    "pk": 2,
+    "fields": {
+      "first_name": "Test2",
+      "last_name": "Test2"
+    }
+  },
+  {
+    "model": "com_ex.People",
+    "pk": 3,
+    "fields": {
+      "first_name": "Test3",
+      "last_name": "Test3"
+    }
+  },
+  {
+    "model": "com_ex.People",
+    "pk": 4,
+    "fields": {
+      "first_name": "Test4",
+      "last_name": "Test4"
+    }
+  },
+  {
+    "model": "com_ex.People",
+    "pk": 5,
+    "fields": {
+      "first_name": "Test5",
+      "last_name": "Test5"
+    }
+  },
+  {
+    "model": "com_ex.People",
+    "pk": 6,
+    "fields": {
+      "first_name": "Test6",
+      "last_name": "Test6"
+    }
+  },
+  {
+    "model": "com_ex.Document",
+    "pk": 1,
+    "fields": {
+      "education": "python",
+      "people_id": "1"
+    }
+  },
+
+  {
+    "model": "com_ex.Document",
+    "pk": 2,
+    "fields": {
+      "education": "java",
+      "people_id": "1"
+    }
+  },
+  {
+    "model": "com_ex.Document",
+    "pk": 3,
+    "fields": {
+      "education": "java",
+      "people_id": "2"
+    }
+  },
+  {
+    "model": "com_ex.Document",
+    "pk": 4,
+    "fields": {
+      "education": "c++",
+      "people_id": "4"
+    }
+  },
+  {
+    "model": "com_ex.Document",
+    "pk": 5,
+    "fields": {
+      "education": "python",
+      "people_id": "4"
+    }
+  }
+]
