@@ -17,7 +17,10 @@ Enter this in your favorite console:
  
 
 # Usage commands:
-* people (you can enter multiple educations separated by a space)
+1) people (you can enter multiple educations separated by a space)
+
     ./ manage.py people {education}
-* weather (you can enter only one city)
+    
+2) weather (you can enter only one city)
+
     ./ manage.py weather {city}
