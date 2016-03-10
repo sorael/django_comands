@@ -41,3 +41,16 @@ class CommandPeopleOutputTests(TestCase):
         self.assertRaisesMessage(CommandError,
                                  'People with "php" education does not exist',
                                  call_command, 'people', 'php', stdout=out)
+
+
+class CommandWeatherOutputTests(TestCase):
+
+    def test_command_output_single_city(self):
+        out = BytesIO()
+        call_command('weather', 'Kiev', stdout=out)
+        out = out.getvalue()
+        self.assertIn('Weather in', out)
+        self.assertIn('Sky', out)
+        self.assertIn('Temperature', out)
+        self.assertIn('Humidity', out)
+        self.assertIn('Wind speed', out)
