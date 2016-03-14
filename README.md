@@ -11,16 +11,16 @@ Enter this in your favorite console:
     git clone git@github.com:sorael/django_commands.git
     cd django_commands
     pip install -r requirements.txt
-    ./ manage.py syncdb
-    ./ manage.py loaddata initial_data.json
+    ./manage.py syncdb
+    ./manage.py loaddata initial_data.json
 
  
 
 # Usage commands:
 1) people (you can enter multiple educations separated by a space)
 
-    ./ manage.py people {education}
+    ./manage.py people {education}
     
 2) weather (you can enter only one city)
 
-    ./ manage.py weather {city}
+    ./manage.py weather {city}
