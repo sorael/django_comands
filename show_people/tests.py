@@ -3,7 +3,7 @@ from io import BytesIO
 from django.test import TestCase
 from django.core.management import call_command
 from django.core.management.base import CommandError
-from com_ex.models import Document
+from show_people.models import Document
 
 
 class CommandPeopleOutputTests(TestCase):
@@ -41,16 +41,3 @@ class CommandPeopleOutputTests(TestCase):
         self.assertRaisesMessage(CommandError,
                                  'People with "php" education does not exist',
                                  call_command, 'people', 'php', stdout=out)
-
-
-class CommandWeatherOutputTests(TestCase):
-
-    def test_command_output_single_city(self):
-        out = BytesIO()
-        call_command('weather', 'Kiev', stdout=out)
-        out = out.getvalue()
-        self.assertIn('Weather in', out)
-        self.assertIn('Sky', out)
-        self.assertIn('Temperature', out)
-        self.assertIn('Humidity', out)
-        self.assertIn('Wind speed', out)

@@ -18,7 +18,7 @@
         }
     },
   {
-    "model": "com_ex.Person",
+    "model": "show_people.Person",
     "pk": 1,
     "fields": {
       "first_name": "Test1",
@@ -26,7 +26,7 @@
     }
   },
   {
-    "model": "com_ex.Person",
+    "model": "show_people.Person",
     "pk": 2,
     "fields": {
       "first_name": "Test2",
@@ -34,7 +34,7 @@
     }
   },
   {
-    "model": "com_ex.Person",
+    "model": "show_people.Person",
     "pk": 3,
     "fields": {
       "first_name": "Test3",
@@ -42,7 +42,7 @@
     }
   },
   {
-    "model": "com_ex.Person",
+    "model": "show_people.Person",
     "pk": 4,
     "fields": {
       "first_name": "Test4",
@@ -50,7 +50,7 @@
     }
   },
   {
-    "model": "com_ex.Person",
+    "model": "show_people.Person",
     "pk": 5,
     "fields": {
       "first_name": "Test5",
@@ -58,7 +58,7 @@
     }
   },
   {
-    "model": "com_ex.Person",
+    "model": "show_people.Person",
     "pk": 6,
     "fields": {
       "first_name": "Test6",
@@ -66,7 +66,7 @@
     }
   },
   {
-    "model": "com_ex.Document",
+    "model": "show_people.Document",
     "pk": 1,
     "fields": {
       "education": "python",
@@ -75,7 +75,7 @@
   },
 
   {
-    "model": "com_ex.Document",
+    "model": "show_people.Document",
     "pk": 2,
     "fields": {
       "education": "java",
@@ -83,7 +83,7 @@
     }
   },
   {
-    "model": "com_ex.Document",
+    "model": "show_people.Document",
     "pk": 3,
     "fields": {
       "education": "java",
@@ -91,7 +91,7 @@
     }
   },
   {
-    "model": "com_ex.Document",
+    "model": "show_people.Document",
     "pk": 4,
     "fields": {
       "education": "c++",
@@ -99,7 +99,7 @@
     }
   },
   {
-    "model": "com_ex.Document",
+    "model": "show_people.Document",
     "pk": 5,
     "fields": {
       "education": "python",

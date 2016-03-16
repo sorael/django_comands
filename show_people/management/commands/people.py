@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.core.management.base import BaseCommand, CommandError
-from com_ex.models import Document
+from show_people.models import Person
 
 
 class Command(BaseCommand):
@@ -12,8 +12,8 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         for education in options['education']:
-            documents = Document.objects.filter(education=education)
-            if len(documents) != 0:
+            documents = Person.filter_by_education(education)
+            if documents:
                 self.stdout.write('People by education %s' % education)
                 for document in documents:
                     self.stdout.write('%s %s' % (document.person.first_name,
